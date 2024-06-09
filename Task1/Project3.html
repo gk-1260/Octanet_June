@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <title>Best Selling Audi Models</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style> 
+        body{
+            padding-top: 56px;
+            font-family: 'Montserrat', sans-serif;;
+        }
+        .Header-container{
+            display:flex;
+            position: fixed;
+            border: 1px;
+            height: 55px;
+            width: 100%;
+            top:0;
+            left:0;
+            z-index: 100;
+        }
+        .Profiles{   /*Flexbox container for cards*/
+            display:flex;
+            justify-content: space-around;
+        }
+        .item{      /*header contents*/
+            justify-content: center;
+            align-self: center;
+            width: 80px;
+        }
+        .item1{
+            flex-grow:2;
+            padding-left:2px;
+        }
+        .cover{
+            width:100%;
+            height:500px;
+            opacity:1;
+            /*filter:grayscale(10%);*/
+        }
+        .Image-container {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+        .centered {
+            font-family: 'Ysabeau SC', sans-serif;
+            color: white;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+        }
+        .centered1{
+            font-family: 'Ysabeau SC', sans-serif;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 35px;
+        }
+        .centered2{
+            font-family: 'Ysabeau SC', sans-serif;
+            color: white;
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .card {   /*for best selling model*/
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+        } 
+        .card1{   /*for keep reading*/
+            width: 300px;
+        }
+        .card:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .card1:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .Card-container{
+            padding: 2px 16px;
+        } 
+        .End-container{
+            display: flex;
+            width: 100%;
+            height: 350px;
+            background-color: gainsboro;
+        }
+        .part{
+            flex-grow:2;
+            justify-content:space-between;
+            text-align: center;
+        }
+        .footer{
+            display:flex;
+            background-color: gainsboro;
+        }
+        .end1{
+            flex-grow:3;
+            text-align: left;
+        }
+        .end2{
+            flex-grow:2;
+            text-align: right;
+        }
+    </style>
+    <body>
+<!--HEADER AND COVER IMAGE-->
+        <div class="Header-container" style="background-color: white;">
+            <div class="item item1">
+                <img src="logo.jpg" style="height:55px; width:120px" id="top">
+            </div>
+            <div class="item item2"><a href="https://www.audi.in/in/web/en.html">Home</a></div>
+            <div class="item item3"><a href="https://www.audi.in/in/web/en/models/layer/audi-connect.html">Connect</a></div>
+            <div class="item item4"><a href="https://www.audi.in/in/web/en/customer-area/service-warranty.html">Service</a></div>
+        </div>
+        <div class="Image-container">
+            <img class="cover" alt="Cover Face" src="cover (2).jpg">
+            <div class="centered1">Newsletter Presents</div>
+            <div class="centered"><b>AUDI</b></div>
+            <div class="centered2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A deleniti ex laboriosam, numquam voluptas odio blanditiis similique enim reiciendis nobis neque facere alias quam quas cupiditate ipsam voluptatem, inventore molestias.</div>
+        </div>
+        <h1 style="text-align: center;">About</h1>
+        <p style="font-size: 20px;">Audi is a German luxury automobile manufacturer that produces a range of vehicles from compact cars to SUVs. It is known for its sleek and modern designs, cutting-edge technology, and high-performance engines. Audi has a long history of producing premium vehicles that are both stylish and practical, making it a popular choice among car enthusiasts. The brand is also committed to sustainability and has implemented various initiatives to reduce its carbon footprint. Overall, Audi is a brand that represents luxury, innovation, and quality craftsmanship.</p>
+<!--MODELS PART-->
+        <h1 style="text-align: center;">Best Selling Models</h1>
+        <div class="Profiles">
+            <div class="card">
+                <img src="Audi A3.jpeg" alt="AudiA3" style="width:100%">
+                <div class="Card-container">
+                    <h4><b>1) Audi A3 – 97,492 models sold</b></h4> 
+                    <p>With the choice of either the Audi A3 Sportback or Saloon variant, you can experience its high-performance levels and effortless combination of comfort, style and practicality.</p> 
+                 </div>
+            </div>
+            <div class="card">
+                <img src="Audi Q3.jpeg" alt="AudiQ3" style="width:100%">
+                <div class="Card-container">
+                    <h4><b>2) Audi Q3 – 89,789 models sold</b></h4> 
+                    <p>There’s a good reason why the Q3 has become such a popular choice. It makes for a fantastic premium business SUV. Thanks to a wide range of trims available and the faster RS option, there are options for everyone.</p> 
+                 </div>
+            </div>
+        </div> 
+        <br>
+        <div class="Profiles">
+            <div class="card">
+                <img src="Audi A4.jpeg" alt="AudiA4" style="width:100%">
+                <div class="Card-container">
+                    <h4><b>3) Audi A4 – 77,515 models sold</b></h4> 
+                    <p>With fantastic fuel efficiency, beautiful interiors and class-leading technology, it is no surprise to see the A4 continue to be so popular.</p> 
+                 </div>
+            </div>
+            <div class="card">
+                <img src="Audi A1.jpeg" alt="Audi1" style="width:100%">
+                <div class="Card-container">
+                    <h4><b>4) Audi A1 – 58,224 models sold</b></h4> 
+                    <p>It offers fantastic versatility. Whether you're searching for an exciting hot hatch with seriously eye-catching looks or a small car to drive to work in, the A1 can do it all.</p> 
+                 </div>
+            </div>
+        </div> 
+        <br>
+        <p>Many Audi car models have many series coming out every year with additional unique features meant to enhance comfort, safety, and performance. These are some of the best selling Audi models.</p>
+        <hr>
+        <!--KEEP READING PART-->
+        <h1>Keep Reading</h1>  
+        <div class="Profiles">
+            <div class="card1">
+                <img src="read1.jpeg" alt="article" style="width:100%">
+                <div class="Card-container">
+                    <p><b>When it comes to electrification of our vehicles, these brands are the best in the game</b></p>
+                    <a href="https://www.carparisonleasing.co.uk/blog/building-your-electric-dreams-the-top-7-ev-manufacturers-in-2022">Click Here</a>
+                </div>
+            </div>
+            <div class="card1">
+                <img src="read2.jpeg" alt="article" style="width:100%">
+                <div class="Card-container">
+                    <p><b>What cars will be unveiled at Goodwood Festival of Speed 2023?</b></p>
+                    <a href="https://www.carparisonleasing.co.uk/blog/what-cars-will-be-unveiled-at-the-goodwood-festival-of-speed-2023">Click Here</a>
+                 </div>
+            </div>
+            <div class="card1">
+                <img src="read3.jpeg" alt="article" style="width:100%">
+                <div class="Card-container">
+                    <p><b>It’s the quirky electric hatchback showdown: should you go for the ORA Funky Cat or the MG4 EV?</b></p>
+                    <a href="https://www.carparisonleasing.co.uk/blog/ora-funky-cat-vs-mg4-ev-which-electric-hatchback-is-right-for-you">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <br>
+<!--CONNECT PART-->
+        <div class="End-container">
+            <div class="part">
+                <p><b>Innovation</b></p>
+                <p>Audi Sport</p>
+                <p>Audi RS e-tron GT</p>
+                <p>Audi e-tron GT</p>
+                <p>Audi quattro</p>
+                <p>Audi e-tron hub</p>
+            </div>
+            <div class="part">
+                <p><b>Support</b></p>
+                <p>Careers</p>
+                <p>Press</p>    
+                <p>Audi Shop</p>  
+                <p>Imprint</p>   
+                <p>Corporate Governance</p> 
+                <p>Contact / Newsletter</p>
+            </div>
+            <div class="part">
+                <p><b>Customer Area</b></p>
+                <p>Audi Owners</p>
+                <p>Audi Service</p>
+                <p>myAudi Connect</p>
+                <p>Audi Club Rewards</p>
+                <p>Audi Concierge</p>
+                <p>Sustainability</p>
+                <p>Discover Audi from Home</p>
+                <p>Book a test drive</p>
+            </div>
+            
+        </div>
+        <hr>
+<!--FOOTER-->
+        <div class="footer">
+            <div class="end1">
+                <h3>&copy;Audi 2023</h3>
+            </div>
+            <div class="end2">
+                <h4>Made by GURKIRAN KAUR</h4>
+            </div>
+        </div>
+    </body>
+</html>
